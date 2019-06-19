@@ -336,7 +336,7 @@ function my_custom_post_testimonial() {
         'search_items' => __( 'Search Testimonial' ),
         'not_found' => __( 'No Testimonials found' ),
         'not_found_in_trash' => __( 'No Testimonials found in the Trash' ),
-        'menu_name' => 'Parkings'
+        'menu_name' => 'Testimonials'
     ];
     $args = [
         'labels' => $labels,
