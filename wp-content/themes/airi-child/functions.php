@@ -28,3 +28,12 @@ function my_custom_post_testimonial() {
 }
 add_action( 'init', 'my_custom_post_testimonial' );
 //we are going to use the excerpt as the USER submitted. Since its anonimous, we accept any string as user.
+
+add_action('init','custom_login');
+function custom_login(){
+    global $pagenow;
+    if( 'wp-login.php' == $pagenow ) {
+        wp_redirect('/login');
+        exit();
+    }
+}
