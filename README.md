@@ -16,8 +16,10 @@ Go to downloaded docker image folder and run:
  GRANT ALL ON bluewp.* TO 'root'@'%';
  FLUSH PRIVILEGES
 ```
+
 ###Copy bluewp.sql from local to docker
 On root directory
+
 ```
 docker cp bluewp.sql mysql:/bluewp.sql
 docker exec -it mysql bash
